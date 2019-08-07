@@ -3,7 +3,7 @@
   <%= f.text_field :title %>
   <%= f.label :details, "Enter details" %>
   <%= f.text_area :details %>
-  <%= unless f.object.new_record? %>
+  <% unless f.object.new_record? %>
     <div class="checkbox">
       <label>
         <%= f.check_box :completed %> Completed
